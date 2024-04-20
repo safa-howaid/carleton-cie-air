@@ -10,3 +10,4 @@ numpy
 Gunicorn
 pinecone-client
 fake-useragent
+Werkzeug

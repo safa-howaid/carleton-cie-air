@@ -1,12 +1,13 @@
 from openai import OpenAI
 from flask import Flask, send_from_directory, request, jsonify, current_app, g as app_ctx
 from flask_cors import cross_origin
-import json
+from werkzeug.middleware.proxy_fix import ProxyFix
 from dotenv import load_dotenv
 from pinecone import Pinecone
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import os
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
+import json
 
 # Load environment variables to get OpenAI API Key
 load_dotenv()
@@ -19,6 +20,7 @@ f.close()
 
 # Initialize flask app
 app = Flask(__name__, static_folder='../build', static_url_path='/')
+app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_host=1)
 
 # Initialize OpenAI client
 openai_client = OpenAI()
