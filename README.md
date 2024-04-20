@@ -15,4 +15,9 @@ Follow the instructions under `/api/README.md` for Flask setup.
 ## Packaging
 - Build docker image: `docker build -f dockerfile -t carleton-cie-air .`
 - Run docker image: `docker run --rm -p 3000:3000 carleton-cie-air`
+
 Once the image is running, connect to [http://localhost:3000](http://localhost:3000)
+
+The docker image is hosted on https://hub.docker.com/r/safahowaid/carleton-cie-air 
+- The latest image can be pulled by running: `docker image pull safahowaid/carleton-cie-air:main`
+- To run the pulled image: `docker run -d -p 3000:3000 safahowaid/carleton-cie-air:main`
