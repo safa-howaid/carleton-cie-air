@@ -1,7 +1,7 @@
 # Carleton Interdisciplinary Ethical AI Research (CIE-AIR)
 A website to search for and find researchers in your field of interest at Carleton University. 
 
-This project is currently deployed to [https://iml.carleton.ca/CIE-AIR/](https://iml.carleton.ca/CIE-AIR/).
+This project is currently deployed to [https://iml.carleton.ca/CIE-AIR/](https://iml.carleton.ca/cie-air).
 
 ## Development Setup
 The repository contains code for both the React frontend and the Flask backend server under `/api`
