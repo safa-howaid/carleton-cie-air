@@ -21,3 +21,9 @@ Once the image is running, connect to [http://localhost:3000](http://localhost:3
 The docker image is hosted on https://hub.docker.com/r/safahowaid/carleton-cie-air 
 - The latest image can be pulled by running: `docker image pull safahowaid/carleton-cie-air:main`
 - To run the pulled image: `docker run -d -p 3000:3000 safahowaid/carleton-cie-air:main`
+
+## Contributers
+
+This project adds on to efforts made by previous students. See previous work here:
+- https://github.com/Kailinho/carleton-ai-research
+- https://github.com/gksaurabh/semanticSearch-backend
